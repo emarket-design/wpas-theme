@@ -1,7 +1,7 @@
 /*
-Theme Name: Wpas
+Theme Name: WPAS
 Theme URI: https://emarketdesign.com
-Author: Anthony Hortin
+Author: eMarket Design
 Author URI: https://emarketdesign.com/
 Description: Wpas is your basic building block for creating beautiful, responsive custom themes. It's not a convoluted or confusing framework that's hard to learn or even harder to modify. It's a simple and elegant starter theme built on HTML5 & CSS3. Its base is a responsive, 12 column grid. It incorporates custom theme options that are easy to modify, a set of common templates, support for WordPress Post Formats and the gorgeous, retina friendly Font Awesome icon font. Wpas is WooCommerce compatible, Multilingual Ready (WPML) and translated into Spanish, German and French.
 Version: 1.3.1
@@ -2317,4 +2317,10 @@ h1.page-title {
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
+}
+/* ==========================================================================
+   WPAS Plugin CSS
+   ========================================================================== */
+div.emd-container li{
+        margin: 0;
 }
