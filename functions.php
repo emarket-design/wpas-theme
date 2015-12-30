@@ -991,7 +991,7 @@ remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wra
  */
 if ( ! function_exists( 'wpas_before_woocommerce_wrapper' ) ) {
 	function wpas_before_woocommerce_wrapper() {
-		echo '<div id="primary" class="site-content row" role="main">';
+		echo '<div id="primary" class="site-content emd-container row" role="main">';
 	}
 }
 
@@ -1005,7 +1005,7 @@ if ( ! function_exists( 'wpas_before_woocommerce_wrapper' ) ) {
  */
 if ( ! function_exists( 'wpas_after_woocommerce_wrapper' ) ) {
 	function wpas_after_woocommerce_wrapper() {
-		echo '</div> <!-- /#primary.site-content.row -->';
+		echo '</div> <!-- /#primary.site-content emd-container.row -->';
 	}
 }
 

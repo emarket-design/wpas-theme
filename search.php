@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content row" role="main">
+	<div id="primary" class="site-content emd-container row" role="main">
 
 
 		<div class="col grid_8_of_12">
@@ -35,6 +35,6 @@ get_header(); ?>
 		</div> <!-- /.col.grid_8_of_12 -->
 		<?php get_sidebar(); ?>
 
-	</div> <!-- /#primary.site-content.row -->
+	</div> <!-- /#primary.site-content emd-container.row -->
 
 <?php get_footer(); ?>
