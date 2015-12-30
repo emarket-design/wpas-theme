@@ -92,9 +92,9 @@
 					for ( $x=1; $x<=2; $x++ ) {
 						if ( is_active_sidebar( 'frontpage-banner'. $x ) ) { ?>
 							<div class="col <?php echo $containerClass?>">
-								<div class="widget-area" role="complementary">
+								<div class="widget-area emd-container" role="complementary">
 									<?php dynamic_sidebar( 'frontpage-banner'. $x ); ?>
-								</div> <!-- /.widget-area -->
+								</div> <!-- /.widget-area emd-container -->
 							</div> <!-- /.col.<?php echo $containerClass?> -->
 						<?php }
 					} ?>

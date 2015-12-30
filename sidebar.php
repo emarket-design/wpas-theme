@@ -8,7 +8,7 @@
 ?>
 	<div class="col grid_4_of_12">
 
-		<div id="secondary" class="widget-area" role="complementary">
+		<div id="secondary" class="widget-area emd-container" role="complementary">
 			<?php
 			do_action( 'before_sidebar' );
 
@@ -29,6 +29,6 @@
 			}
 			?>
 
-		</div> <!-- /#secondary.widget-area -->
+		</div> <!-- /#secondary.widget-area emd-container -->
 
 	</div> <!-- /.col.grid_4_of_12 -->

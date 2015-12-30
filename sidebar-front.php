@@ -18,7 +18,7 @@
 
 	// If there's one or more one active sidebars, create a row and add them
 	if ( $footerSidebars > 0 ) { ?>
-		<div id="secondary" class="home-sidebar row">
+		<div id="secondary" class="home-sidebar emd-container row">
 			<?php
 			// Work out the container class name based on the number of active front page sidebars
 			$containerClass = "grid_" . 12 / $footerSidebars . "_of_12";
@@ -27,9 +27,9 @@
 			for ( $x=1; $x<=4; $x++ ) {
 				if ( is_active_sidebar( 'sidebar-homepage'.  $x ) ) { ?>
 					<div class="col <?php echo $containerClass?>">
-						<div class="widget-area" role="complementary">
+						<div class="widget-area emd-container" role="complementary">
 							<?php dynamic_sidebar( 'sidebar-homepage'.  $x ); ?>
-						</div> <!-- #widget-area -->
+						</div> <!-- #widget-area emd-container -->
 					</div> <!-- /.col.<?php echo $containerClass?> -->
 				<?php }
 			} ?>
