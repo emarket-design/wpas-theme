@@ -20,7 +20,7 @@ Text Domain: wpas
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 /* Using rem font sizing (Root em’s) with fallback to px for ie8 and below - http://snook.ca/archives/html_and_css/font-size-with-rem */
-body { margin: 0; font-size: 16px; font-size: 1rem; line-height: 1.5; }
+body { margin: 0; font-size: 16px; font-size: 1rem; line-height: 1.5em; }
 
 ::-webkit-selection { background: #5784FE; color: #fff; text-shadow: none; }
 ::-moz-selection { background: #5784FE; color: #fff; text-shadow: none; }
@@ -42,7 +42,7 @@ td { vertical-align: top; }
 body { 
 	margin: 0 auto;
 	padding: 0;
-	font: 16px/1.5 'PT Sans', Helvetica, Arial, sans-serif;
+	font: 16px/1.5 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 1rem;
 	font-style: normal;
 	font-weight: 400;
@@ -185,25 +185,25 @@ ul ul, ul ol, ol ol, ol ul {
 }
 
 dt {
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 700;
 }
 
 b, strong { 
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 700;
 }
 
 em {
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-style: italic;
 	font-weight: 400;
 }
 
 strong em, b em {
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-style: italic;
 	font-weight: 700;
 }
@@ -282,7 +282,7 @@ blockquote.pull-right {
 }
 
 blockquote p {
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-style: italic;
 	font-weight: 400;
 	font-size: 24px;
@@ -300,7 +300,7 @@ blockquote cite:before {
 }
 
 blockquote cite {
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -371,7 +371,7 @@ sub {
 .wp-caption .wp-caption-text,
 .gallery-caption,
 .entry-caption {
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-style: italic;
 	font-weight: 400;
 	font-size: 14px;
@@ -415,7 +415,7 @@ img.wp-smiley, .rsswidget img {
 }
 
 .menu-toggle, button, input {
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -616,7 +616,7 @@ select {
 .page-title,
 .entry-content th,
 .comment-content th {
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 14px;
@@ -795,7 +795,7 @@ select {
 }
 
 .comments-link {
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-style: italic;
 	font-weight: 400;
 	font-size: 14px;
@@ -918,7 +918,7 @@ article.sticky {
 
 .entry-header address,
 .comment-content address {
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-style: italic;
 	font-weight: 400;
 	display: block;
@@ -930,7 +930,7 @@ article.sticky {
 
 .entry-header time,
 .entry-header address {
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-style: italic;
 	font-weight: 400;
 	font-size: 14px;
@@ -983,7 +983,7 @@ article.sticky {
 
 .entry-content dt,
 .comment-content dt {
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	line-height: 1.5;
@@ -1245,7 +1245,7 @@ article.sticky {
 }
 
 .archive-meta {
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-style: italic;
 	font-weight: 400;
 	color: #777;
@@ -1305,7 +1305,7 @@ article.sticky {
 }
 
 .comments-area article header time {
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-style: italic;
 	font-weight: 400;
 	line-height: 1.8;
@@ -1462,7 +1462,7 @@ span.required {
 }
 
 form label.error {
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	display:block;
@@ -1613,7 +1613,7 @@ form label.error {
 }
 
 #wp-calendar caption {
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -1766,7 +1766,7 @@ li span.dots {
 }
 
 .nav-menu {
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 18px;
