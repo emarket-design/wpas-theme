@@ -180,6 +180,7 @@ p, ol, ul, dl, address {
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
+	font-weight:300;
 }
 
 ul ul, ul ol, ol ol, ol ul {
