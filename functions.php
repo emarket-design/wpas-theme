@@ -384,7 +384,7 @@ function wpas_scripts_styles() {
 
 	// Our styles for setting up the grid.
 	// If you prefer to use a different grid system, simply replace this and perform a find/replace in the php for the relevant styles. I'm nice like that!
-	wp_register_style( 'gridsystem', trailingslashit( get_template_directory_uri() ) . 'css/grid.css' , array( 'fontawesome' ), '1.0.0', 'all' );
+	wp_register_style( 'gridsystem', trailingslashit( get_template_directory_uri() ) . 'css/grid.css' , array( 'font-awesome' ), '1.0.0', 'all' );
 	wp_enqueue_style( 'gridsystem' );
 
 	/*
