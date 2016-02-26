@@ -16,7 +16,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content emd-container row" role="main">
+	<div id="primary" class="site-content emd-container row" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 		<div class="col grid_12_of_12">
 
 			<?php if ( have_posts() ) : ?>

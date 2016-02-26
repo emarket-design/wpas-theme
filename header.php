@@ -34,7 +34,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> itemscope="itemscope" itemtype="http://schema.org/WebPage">
 
 <div id="wrapper" class="hfeed site">
 
@@ -42,8 +42,8 @@
 
 	<div id="headercontainer">
 
-		<header id="masthead" class="site-header row" role="banner">
-			<div class="col grid_5_of_12 site-title">
+		<header id="masthead" class="site-header row" itemscope="itemscope" itemtype="http://schema.org/WPHeader" role="banner">
+			<div class="col grid_5_of_12 site-title" itemprop="headline">
 				<h1>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" rel="home">
 						<?php 
@@ -62,7 +62,7 @@
 				<div class="social-media-icons">
 					<?php echo wpas_get_social_media(); ?>
 				</div>
-				<nav id="site-navigation" class="main-navigation" role="navigation">
+				<nav id="site-navigation" class="main-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
 					<h3 class="menu-toggle assistive-text"><?php esc_html_e( 'Menu', 'wpas' ); ?></h3>
 					<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'wpas' ); ?>"><?php esc_html_e( 'Skip to content', 'wpas' ); ?></a></div>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
@@ -92,7 +92,7 @@
 					for ( $x=1; $x<=2; $x++ ) {
 						if ( is_active_sidebar( 'frontpage-banner'. $x ) ) { ?>
 							<div class="col <?php echo $containerClass?>">
-								<div class="widget-area emd-container" role="complementary">
+								<div class="widget-area emd-container" role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
 									<?php dynamic_sidebar( 'frontpage-banner'. $x ); ?>
 								</div> <!-- /.widget-area emd-container -->
 							</div> <!-- /.col.<?php echo $containerClass?> -->

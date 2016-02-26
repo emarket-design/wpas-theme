@@ -15,28 +15,28 @@
 		<?php } ?>
 		<header class="entry-header">
 			<?php if ( is_single() ) { ?>
-				<h1 class="entry-title"><?php the_title(); ?></h1>
+				<h1 class="entry-title" itemprop="headline"><?php the_title(); ?></h1>
 			<?php }
 			else { ?>
-				<h1 class="entry-title">
+				<h1 class="entry-title" itemprop="headline">
 					<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'wpas' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
 				</h1>
 			<?php } // is_single() ?>
 			<?php wpas_posted_on(); ?>
 			<?php if ( has_post_thumbnail() && !is_search() ) { ?>
 				<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'wpas' ), the_title_attribute( 'echo=0' ) ) ); ?>">
-					<?php the_post_thumbnail( 'post_feature_full_width' ); ?>
+					<div class="entry-thumb" itemprop="image"><?php the_post_thumbnail( 'post_feature_full_width' ); ?></div>
 				</a>
 			<?php } ?>
 		</header> <!-- /.entry-header -->
 
 		<?php if ( is_search() ) { // Only display Excerpts for Search ?>
-			<div class="entry-summary">
+			<div class="entry-summary" itemprop="text">
 				<?php the_excerpt(); ?>
 			</div> <!-- /.entry-summary -->
 		<?php }
 		else { ?>
-			<div class="entry-content">
+			<div class="entry-content" itemprop="text">
 				<?php the_content( wp_kses( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'wpas' ), array( 'span' => array( 
 					'class' => array() ) ) )
 					); ?>

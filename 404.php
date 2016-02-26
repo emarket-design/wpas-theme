@@ -8,13 +8,13 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content emd-container row" role="main">
+	<div id="primary" class="site-content emd-container row" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 
 		<div class="col grid_12_of_12">
 
 			<article id="post-0" class="post error404 no-results not-found">
 				<header class="entry-header">
-					<h1 class="entry-title"><i class="fa fa-frown-o fa-lg"></i> <?php esc_html_e( 'Uh Oh! This is somewhat embarrassing!', 'wpas' ); ?></h1>
+					<h1 class="entry-title" itemprop="headline"><i class="fa fa-frown-o fa-lg"></i> <?php esc_html_e( 'Uh Oh! This is somewhat embarrassing!', 'wpas' ); ?></h1>
 				</header>
 				<div class="entry-content">
 					<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'wpas' ); ?></p>

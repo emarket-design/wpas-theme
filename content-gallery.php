@@ -10,10 +10,10 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php if ( is_single() ) { ?>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
+			<h1 class="entry-title" itemprop="headline"><?php the_title(); ?></h1>
 		<?php }
 		else { ?>
-			<h1 class="entry-title">
+			<h1 class="entry-title" itemprop="headline">
 				<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'wpas' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
 			</h1>
 		<?php } // is_single() ?>

@@ -11,7 +11,7 @@
 
 <article id="post-0" class="post no-results not-found">
 	<header class="entry-header">
-		<h1 class="entry-title"><?php esc_html_e( 'Nothing Found', 'wpas' ); ?></h1>
+		<h1 class="entry-title" itemprop="headline"><?php esc_html_e( 'Nothing Found', 'wpas' ); ?></h1>
 	</header><!-- /.entry-header -->
 
 	<div class="entry-content">

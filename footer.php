@@ -16,7 +16,7 @@
 
 	<div id="footercontainer">
 
-		<footer class="site-footer emd-container row" role="contentinfo">
+		<footer class="site-footer emd-container row" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
 
 			<?php
 			// Count how many footer sidebars are active so we can work out how many containers we need
@@ -37,7 +37,7 @@
 				for ( $x=1; $x<=4; $x++ ) {
 					if ( is_active_sidebar( 'sidebar-footer'. $x ) ) { ?>
 						<div class="col <?php echo $containerClass?>">
-							<div class="widget-area emd-container" role="complementary">
+							<div class="widget-area emd-container" role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
 								<?php dynamic_sidebar( 'sidebar-footer'. $x ); ?>
 							</div>
 						</div> <!-- /.col.<?php echo $containerClass?> -->

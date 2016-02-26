@@ -8,7 +8,7 @@
 ?>
 	<div class="col grid_4_of_12">
 
-		<div id="secondary" class="widget-area emd-container" role="complementary">
+		<div id="secondary" class="widget-area emd-container" role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
 			<?php
 			do_action( 'before_sidebar' );
 

@@ -28,7 +28,7 @@
 				<a href="<?php the_author_meta( 'googleplus' ) ?>" title="Google+"><i class="fa fa-google-plus fa-fw"></i></a>
 			<?php } ?>
 		</p>
-		<div class="author-link">
+		<div class="author-link" itemscope="itemscope" itemtype="http://schema.org/Person" itemprop="author">
 			<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
 				<?php printf( wp_kses( __( 'View all posts by %s <span class="meta-nav">&rarr;</span>', 'wpas' ), array( 
 					'span' => array( 

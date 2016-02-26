@@ -10,7 +10,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content emd-container row" role="main">
+	<div id="primary" class="site-content emd-container row" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 
 		<?php get_sidebar(); ?>
 		<div class="col grid_8_of_12">

@@ -27,7 +27,7 @@
 			for ( $x=1; $x<=4; $x++ ) {
 				if ( is_active_sidebar( 'sidebar-homepage'.  $x ) ) { ?>
 					<div class="col <?php echo $containerClass?>">
-						<div class="widget-area emd-container" role="complementary">
+						<div class="widget-area emd-container" role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
 							<?php dynamic_sidebar( 'sidebar-homepage'.  $x ); ?>
 						</div> <!-- #widget-area emd-container -->
 					</div> <!-- /.col.<?php echo $containerClass?> -->

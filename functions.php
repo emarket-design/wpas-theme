@@ -665,7 +665,7 @@ if ( ! function_exists( 'wpas_posted_on' ) ) {
 		);
 
 		// Translators: 1: Date link 2: Author link 3: Categories 4: No. of Comments
-		$author = sprintf( '<i class="fa fa-pencil"></i> <address class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></address>',
+		$author = sprintf( '<i class="fa fa-pencil"></i> <address class="author vcard" itemprop="name"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></address>',
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			esc_attr( sprintf( esc_html__( 'View all posts by %s', 'wpas' ), get_the_author() ) ),
 			get_the_author()
@@ -991,7 +991,7 @@ remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wra
  */
 if ( ! function_exists( 'wpas_before_woocommerce_wrapper' ) ) {
 	function wpas_before_woocommerce_wrapper() {
-		echo '<div id="primary" class="site-content emd-container row" role="main">';
+		echo '<div id="primary" class="site-content emd-container row" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">';
 	}
 }
 

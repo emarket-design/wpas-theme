@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content emd-container row" role="main">
+	<div id="primary" class="site-content emd-container row" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 
 		<div class="col grid_8_of_12">
 
@@ -21,7 +21,7 @@ get_header(); ?>
 				?>
 
 				<header class="archive-header">
-					<h1 class="archive-title"><?php printf( esc_html__( 'Author Archives: %s', 'wpas' ), '<span class="vcard">' . get_the_author() . '</span>' ); ?></h1>
+					<h1 class="archive-title"><?php printf( esc_html__( 'Author Archives: %s', 'wpas' ), '<span class="author vcard" itemprop="name">' . get_the_author() . '</span>' ); ?></h1>
 				</header><!-- .archive-header -->
 
 				<?php // If a user has filled out their description, show a bio on their entries.
