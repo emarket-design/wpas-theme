@@ -404,7 +404,7 @@ function wpas_scripts_styles() {
 	// If using a child theme, auto-load the parent theme style.
 	// Props to Justin Tadlock for this recommendation - http://justintadlock.com/archives/2014/11/03/loading-parent-styles-for-child-themes
 	if ( is_child_theme() ) {
-		wp_enqueue_style( 'parent-style', trailingslashit( get_template_directory_uri() ) . 'style.css' );
+		wp_enqueue_style( 'parent-style', trailingslashit( get_template_directory_uri() ) . 'style.min.css' );
 	}
 
 	// Enqueue the default WordPress stylesheet
