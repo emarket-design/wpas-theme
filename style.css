@@ -1353,13 +1353,9 @@ article.sticky {
 }
 
 .comments-area li.bypostauthor cite span {
-	position: absolute;
-	margin-left: 6px;
-	margin-left: 0.375rem;
-	padding: 2px 6px;
-	padding: 0.125rem 0.375rem;
 	font-size: 12px;
 	font-size: 0.75rem;
+	display:block;
 }
 
 a.comment-reply-link {
@@ -1389,7 +1385,40 @@ a.comment-reply-link:hover {
 .commentlist {
 	padding-left: 0;
 }
+/* 
+   The baseline. This will be applied to any browser that does not
+   support calc, and any browser that is smaller than 800px wide 
+*/
+.commentlist,  
+.comment {
+    width: 100%;
+}
 
+.comments-area .children {
+    margin-left: 5%;
+    padding-left: 0;
+    width: 95%;
+}
+
+/* 
+  For browser over 800px wide (50em = 800px), threaded comment blocks are
+  indented by a specific unit -- not percentages.
+  Note that our root font size is 10px, so 1rem = 10px and 7rem = 70px. 
+*/
+@media all and (min-width: 50em) {
+    .comments-area .children {  
+        /* Why the use of calc for margin-left? 
+           Because browsers that don't support calc will be served 
+           up the mobile styling, which is percentage based.  */
+        margin-left: calc( 7rem );
+        margin-left: -moz-calc( 7rem );
+        margin-left: -webkit-calc( 7rem );
+
+        width: calc(100% - 7rem);
+        width: -moz-calc(100% - 7rem);
+        width: -webkit-calc(100% - 7rem);
+    }
+}
 /* Comment form */
 #respond {
 	margin-top: 48px;
