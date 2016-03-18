@@ -1596,6 +1596,7 @@ form label.error {
 	word-break: break-word;
 	margin-bottom: 48px;
 	margin-bottom: 3rem;
+	display: inline-block;
 }
 
 .widget select {
