@@ -179,7 +179,7 @@ p, ol, ul, dl, address {
 	margin: 0 0 1.5rem 0;
 	font-size: inherit;
 	line-height: 1.5;
-	font-weight:300;
+	font-weight:400;
 }
 
 ul ul, ul ol, ol ol, ol ul {
@@ -201,7 +201,7 @@ b, strong {
 em {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-style: italic;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 strong em, b em {
