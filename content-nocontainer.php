@@ -7,7 +7,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="entry-content nocontainer">
                 <?php the_content(); ?>
                 <?php wp_link_pages( array(
@@ -20,4 +20,4 @@
         <footer class="entry-meta">
                 <?php edit_post_link( esc_html__( 'Edit', 'wpas' ) . ' <i class="fa fa-angle-right"></i>', '<div class="edit-link">', '</div>' ); ?>
         </footer><!-- /.entry-meta -->
-</article><!-- /#post -->
+</div><!-- /#post -->
