@@ -1815,6 +1815,7 @@ li span.dots {
 
 .main-navigation ul ul li {
 	margin: 0;
+	font-size: medium;
 }
 
 .main-navigation li.menu-parent-item > a:after { /* If you don't want the arrows on the top level drop down, simply remove this style */
@@ -1873,9 +1874,6 @@ li span.dots {
 .main-navigation ul ul a {
 	color: #fff; /* Nav bar dropdown link color */
 	width: 10.5em; /* Nav bar dropdown width */
-}
-
-.main-navigation ul ul li {
 }
 
 .main-navigation li:hover > a {
