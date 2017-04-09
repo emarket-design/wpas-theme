@@ -2249,6 +2249,20 @@ h1.page-title {
 
 
 /*  Adjust the menu at less than 520px */
+#site-navigation h3.menu-toggle{
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+padding: 6px 12px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  display:inline-block;
+margin-bottom: 10px;
+}
 @media only screen and (max-width: 520px) {
 	.site-title h1 {
 		text-align: center;
